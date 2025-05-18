@@ -37,10 +37,11 @@ Este projeto demonstra o uso prático de **IA generativa**, com foco na automaç
 
 ## 💼 Exemplo de Uso
 
-Curso: Engenharia de Computação
-Período: 1º semestre
-Local: Sorocaba - SP
-Cargo: Estagiário
+- Curso: Engenharia de Computação
+- Período: 1º semestre
+- Local: Sorocaba - SP
+- Cargo: Estagiário
+
 🔗 O bot exibirá as vagas mais relevantes com links clicáveis para cada uma.
 
 ---
