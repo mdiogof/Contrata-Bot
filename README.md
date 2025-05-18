@@ -22,6 +22,22 @@ Este projeto demonstra o uso prático de **IA generativa**, com foco na automaç
 
 ---
 
+## 🔑 Configurando sua chave da API do Gemini
+
+Para executar este notebook, você precisa configurar sua chave da API do Gemini:
+
+1. No Google Colab, vá até o menu:
+   - Executar → Gerenciar chaves de API (secrets)
+   - Ou Runtime → Manage Secrets
+2. Adicione uma nova chave:
+   - Nome: sua_chave_aqui
+   - Valor: sua_chave_da_api_do_gemini
+3. Depois de salvar, ative a chave clicando no botão ao lado do campo no painel de Secrets.
+
+Pronto! Agora o Contrata Bot poderá acessar a API com segurança.
+
+---
+
 ## 🧪 Como Executar
 
 1. Clone o repositório:
@@ -29,9 +45,11 @@ Este projeto demonstra o uso prático de **IA generativa**, com foco na automaç
    git clone https://github.com/seu-usuario/contrata-bot.git
 2. Abra o notebook no Google Colab.
 3. Insira sua Google API Key no userdata do Colab:
-   from google.colab import userdata
-   userdata.set('GOOGLE_API_KEY', 'sua_chave_aqui')
-4. Execute o notebook e responda às perguntas interativas.
+   import os  
+   from google.colab import userdata  
+   os.environ["GOOGLE_API_KEY"] = userdata.get('sua_chave_aqui')
+   - Essa parte já está no código, basta alterar o campo 'sua_chave_aqui' com o nome dela.
+5. Execute o notebook e responda às perguntas interativas.
 
 ---
 
