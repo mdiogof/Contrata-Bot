@@ -44,7 +44,7 @@ Pronto! Agora o Contrata Bot poderá acessar a API com segurança.
    ```bash
    git clone https://github.com/seu-usuario/contrata-bot.git
 2. Abra o notebook no Google Colab.
-3. Insira sua Google API Key no userdata do Colab:
+3. Insira sua Google API Key no userdata do Colab:  
    import os  
    from google.colab import userdata  
    os.environ["GOOGLE_API_KEY"] = userdata.get('sua_chave_aqui')
